@@ -3,49 +3,60 @@
         float: none;
         margin-left: 20px;
     }
+
     #titulo-header {
         font-weight: bolder;
         font-size: 30px;
         margin-bottom: 5px;
     }
+
     #presentacion {
         height: 300px;
     }
+
     #presentacion>span p {
         font-size: 16px;
     }
+
     #presentacion>span {
         display: inline-block;
         margin-top: 100px;
         margin-left: 50px;
         color: beige;
     }
-    body{
-        background-color: lightslategray;
+
+    body {
+        background-color: rgb(211, 217, 223);
     }
-    p{
-        font-size: 2vh;
+
+    p {
+        font-size: 16px;
     }
-    .TGeneral{
-        font-size: 4vh;
+
+    .TGeneral {
+        font-size: 30px;
         margin: 10px auto;
         font-weight: bolder;
     }
 
-    article>.right{
+    article>.right {
         float: none;
     }
-    article>.left{
+
+    article>.left {
         float: none;
     }
+
     #aboutus>article img {
         margin: 0 auto;
         display: block;
         width: 100%;
     }
+
     #aboutus article {
         width: 100%;
     }
+
     #aboutus>article p {
         font-size: 16px;
         display: block;
@@ -53,45 +64,52 @@
         width: 100%;
     }
 
-    .Carta-grid{
+    .Carta-grid {
         width: 98%;
         filter: grayscale(0%) blur(0px);
         background-color: rgb(250, 238, 216);
         border: double black 1px;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas:"titulo texto"
-                            "titulo img1"
-                            "titulo img2";
+        grid-template-areas: "titulo texto"
+            "titulo img1"
+            "titulo img2";
     }
+
     .Carta-grid:hover {
         border: solid black 2px;
         width: 100%;
         box-shadow: 0px;
         filter: grayscale(0%);
     }
+
     #Titulo-Menu {
         width: 100%;
     }
 
-    .texto-grid h3{
-        font-size: 2.5vh;
+    .texto-grid h3 {
+        font-size: 20px;
     }
-    .texto-grid p{
-        font-size: 2vh;
+
+    .texto-grid p {
+        font-size: 16px;
     }
-    .img-h-menu{
+
+    .img-h-menu {
         margin: 0 auto;
     }
-    .img-par{
+
+    .img-par {
         filter: grayscale(0%) blur(0px) !important;
     }
+
     #Gallery>div {
         width: 90%;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 50px;
     }
+
     footer div {
         float: none;
         line-height: 50px;
@@ -100,21 +118,69 @@
         display: block;
     }
 }
-/* @media (max-width: 576px) {
+
+@media (max-width: 576px) {
     body {
-        background-color: lightgreen;
+        background-color: rgb(164, 163, 169);
     }
-    article>.right{
-        float: left;
+    .TGeneral {
+        font-size: 35px;
+        margin: 10px auto;
+        font-weight: bolder;
     }
-    article>.left{
-        float: right;
-    }
-        footer div {
+    footer div {
         float: none;
         line-height: 50px;
         margin: 0 auto;
         text-align: center;
         display: block;
-  }
-} */
+    }
+    #Titulo-Menu{
+        display: none;
+    }
+    .Carta-grid {
+        width: 98%;
+        filter: grayscale(0%) blur(0px);
+        background-color: rgba(250, 238, 216, 0.5);
+        border: none;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "titulo"
+            "texto"
+            "img1"
+            "img2";
+    }
+    .menu-grid {
+        grid-area: titulo;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        border-right: none;
+        border: double 2px gray;
+    }    
+    .menu-grid>h1 {
+        margin: 10px;
+        text-align: center;
+        /* Rotar */
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .texto-grid p {
+        padding: 0 5px;
+        margin: 0 10px;
+    }
+    #Gallery img {
+        width: 90%;
+    }
+    #Gallery img:hover {
+        width: 91%;
+        margin: 8px;
+        filter: grayscale(0%);
+    }
+    footer{
+        text-align: center;
+    }
+}
